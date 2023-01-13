@@ -1,0 +1,99 @@
+@import "../../utils/Color.scss";
+
+.buy-container {
+  width: 100%;
+  background-color: $blackColor;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 15px 0px;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .image {
+    height: 13rem;
+    // border: 1px saddlebrown solid;
+
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    padding: 1rem;
+    // border: 1px saddlebrown solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .title {
+      h3 {
+        color: $greenColor;
+        font-weight: 800;
+        // border: 1px saddlebrown solid;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+    }
+    .subTitle {
+      p {
+        color: $greenColor;
+        padding: 10px;
+      }
+    }
+    .money {
+      p {
+        color: $greenColor;
+        font-size: 30px;
+        border-bottom: 1px solid $greenColor;
+      }
+    }
+  }
+}
+
+.button-pricing {
+  padding: 1rem 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  color: $blackColor;
+  font-weight: 600;
+  background-color: $greenColor;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: none;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    // letter-spacing: 2px;
+    animation: jelly 0.5s;
+    cursor: pointer;
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: translate(0, 0);
+  }
+  1.78571% {
+    transform: translate(5px, 0);
+  }
+  3.57143% {
+    transform: translate(0, 0);
+  }
+  5.35714% {
+    transform: translate(5px, 0);
+  }
+  7.14286% {
+    transform: translate(0, 0);
+  }
+  8.92857% {
+    transform: translate(5px, 0);
+  }
+  10.71429% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

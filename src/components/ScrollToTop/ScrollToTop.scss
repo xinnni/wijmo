@@ -1,0 +1,33 @@
+@import "../../utils/Color.scss";
+
+.scrollToTop {
+  border-radius: 100%;
+  position: fixed;
+  height: 4rem;
+  width: 4rem;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all;
+  animation: UpDown 1s linear infinite;
+  img {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes UpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 0.5em;
+  }
+  100% {
+    bottom: 0;
+  }
+}

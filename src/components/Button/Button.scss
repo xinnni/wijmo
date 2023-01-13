@@ -1,0 +1,33 @@
+@import "../../utils/Color.scss";
+
+.button-de {
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: #6b8e8a;
+  font-weight: 600;
+  background-color: $blackColor;
+
+  border: none;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 4px 2px -2px #465d5a;
+  &:hover {
+    // letter-spacing: 2px;
+    animation: jelly 0.5s;
+    cursor: pointer;
+  }
+}
+
+@keyframes jelly {
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

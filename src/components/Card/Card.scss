@@ -1,0 +1,98 @@
+@import "../../utils/Color.scss";
+
+.card {
+  height: 18rem;
+  width: 15rem;
+  background-color: #181b1f;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px 0px 5px;
+
+  transition: 0.5s ease-in-out;
+  &:hover {
+    animation: ani;
+    scale: (1.05);
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  .card-logo {
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50rem;
+
+    // // border: 1px solid black;
+    // // transition: 0.2s ease-in-out;
+
+    background-color: #6385815c;
+
+    img {
+      height: 60px;
+      // border: 1px solid black;
+    }
+  }
+  .card-title {
+    color: $greenColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    // border: 1px solid black;
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 15px;
+      margin-top: 10px;
+      padding: 2px;
+      border-top: 1px solid #3e524f;
+    }
+  }
+  // &:hover {
+  //   box-shadow: #6b9691d5 5px 5px, #4f6b68a5 10px 10px, #0000005c 15px 15px;
+  // }
+}
+
+.card.riblock {
+  color: whitesmoke;
+}
+
+@keyframes ani {
+  16.65% {
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

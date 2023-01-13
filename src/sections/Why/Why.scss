@@ -1,0 +1,88 @@
+@import "../../utils/Color.scss";
+
+.why-container {
+  min-height: 900px;
+  margin: 0 10%;
+
+  .container {
+    // padding: 1rem 0;
+
+    .why-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        margin-bottom: 1rem;
+        // border-top: 2px solid $blackColor;
+      }
+
+      .why-subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+          text-align: center;
+          color: $blackColor;
+        }
+
+        .p1 {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+        .p2 {
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.contents {
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+
+  .why-reasons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    ul {
+      width: 80%;
+      list-style-type: none;
+
+      li {
+        color: $blackColor;
+        margin-bottom: 0.5rem;
+
+        position: relative;
+        font-size: 25px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -4px;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+.why-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.why-image img {
+  height: 60rem;
+}

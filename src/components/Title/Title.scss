@@ -1,0 +1,90 @@
+@import "../../utils/Color.scss";
+.title {
+  margin-bottom: 4rem;
+  margin-top: 30px;
+  border-top: 3px solid $blackColor;
+  .clgreen {
+    color: $greenColor;
+    // border-top: 3px solid $greenColor;
+    &::after {
+      border-top: 3px solid $greenColor;
+      content: attr(data-shadow);
+      position: absolute;
+      top: 0.06em;
+      left: 0.06em;
+      z-index: -1;
+      text-shadow: none;
+      background-image: linear-gradient(
+        45deg,
+        transparent 45%,
+        $greenColor 45%,
+        $greenColor 65%,
+        transparent 0
+      );
+    }
+  }
+
+  h2 {
+    margin-bottom: 0.7rem;
+    font-size: 60px;
+    // color: $blackColor;
+    font-weight: 900;
+    transform: skew(-20deg);
+    position: relative;
+    text-transform: uppercase;
+    padding-right: 10px;
+    &::after {
+      border-top: 3px solid $greenColor;
+
+      content: attr(data-shadow);
+      position: absolute;
+      top: 0.06em;
+      left: 0.06em;
+      z-index: -1;
+      text-shadow: none;
+      background-image: linear-gradient(
+        45deg,
+        transparent 45%,
+        $blackColor 45%,
+        $blackColor 65%,
+        transparent 0
+      );
+      background-size: 0.05em 0.05em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  // .w {
+  //   // color: $ whitecolor;
+  //   height: 0.2rem;
+  //   width: 9rem;
+  //   border-radius: 0.1rem;
+  //   background-color: $whitecolor;
+  // }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clblock {
+  color: $blackColor;
+  &::after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 0.06em;
+    left: 0.06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image: linear-gradient(
+      45deg,
+      transparent 45%,
+      $greenColor 45%,
+      $greenColor 65%,
+      transparent 0
+    );
+  }
+}
